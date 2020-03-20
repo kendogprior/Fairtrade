@@ -1,0 +1,16 @@
+{{define "page-content"}}
+<div class="container">
+    <div class="row pad-top">
+      {{ range $.Site.Data.outlets }}
+        <div class = "col-3 borda">
+            <p class = "town">{{ .Town}}</p>
+            <div class = "name">{{ .Name}}</div>
+            <div class = "address">{{.Address}}</div>
+            <span>{{.Products}}</span>
+            <p>{{.Contact}}</p>
+        </div>
+      {{end}}
+    </div>
+    <hr/>
+  </div>
+{{end}}

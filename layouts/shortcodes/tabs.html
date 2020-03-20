@@ -1,0 +1,33 @@
+<div class = "col-10 padleft content-solidbg-left">
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">LINKS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">DOWNLOADS</a>
+          </li>      
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <h3>Useful links</h3>
+        {{range .Site.Params.links}}
+            <p><a href = {{.link}}>{{.name}}</a></p>
+        {{end}}
+      </div>
+
+        <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <!-- <div> -->
+          {{range .Site.Params.downloads}}
+          <h3>{{.title}}</h3>
+          <div class="lines resbox">
+            <span style = "color:rgb(10, 56, 56); font-size:18px;">Summary</span>: {{.summary}}<br>
+              <span style = "color:rgb(10, 56, 56); font-size:18px;">Source</span>: {{.source}}
+             <p><span style = "color:rgb(10, 56, 56); font-size:18px;">Download</span>: <a href = {{.link}}>{{.title}}</a></p>
+              </div>
+          {{end}}
+        </div>
+    </div>
+</div>
+

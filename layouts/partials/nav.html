@@ -1,0 +1,7 @@
+<ul class = "nav justify-content-center topmen">
+    {{$title := .Title}}
+    {{ range .Site.Menus.mainmenu}}   
+              <li class="nav-item"><a class="nav-link" href = "{{.URL}}"{{if eq .Title $title}}id="uline" {{end}}>{{.Title}}</a></li> 
+    {{end}}
+</ul>   
+

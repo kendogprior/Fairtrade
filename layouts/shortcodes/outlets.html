@@ -1,0 +1,28 @@
+
+<div class="table-responsive"> 
+    <table class = "table table-striped">
+
+        <thead>
+            <tr>
+                <th scope ="col">Town</th>
+                <th scope ="col">Name</th>
+                <th scope ="col">Address</th>
+                <th scope ="col">Contact</th>
+                <th scope ="col">Products</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range $.Site.Data.outlets }}  
+            <tr>       
+                <th scope="row">{{ .Town}}</th>
+                <td>{{ .Name}}</td>
+                <td>{{.Address}}</td>
+                <td>{{.Contact}}</td> 
+                <td>{{.Products}}</td>      
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+</div>
+
+  

@@ -1,0 +1,37 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+Title = "Fairtrade Forum"
+#---------Resource link data--------
+[params]
+  [[params.links]]
+    name = "The official tradecraft shop"
+    link = "http://tradecraftshop.co.uk/"
+  [[params.links]]    
+    name = "Portsmouth Fairtrade"
+    link = "http://portsmouthfairtrade.org.uk/"
+
+  [[params.links]]
+    name = "The Fairtrade Foundation"
+    link = "http://www.fairtrade.org.uk/"
+
+  [[params.links]]
+    name = "Hampshire Fairtrade"
+    link = "http://fftb.org.uk/hfn/page.php"
+
+  # [[params.links]]
+  #   link = ""
+  #   name = "a"
+
+#---------Resource download data--------- 
+  [[params.downloads]]
+      title = "Teaching Resources"
+      link = "http://www.iowfairtradeforum.org.uk/forum_resources"
+      summary = "Ideas for teaching or your event"
+      source = "Anna Fauzy-Ackroyd"
+      
+
+# [menu]
+#   [[menu.main]]
+#     title = "Scan"
+#     url = "http://files/Scan.pdf"
+#     weight = 100

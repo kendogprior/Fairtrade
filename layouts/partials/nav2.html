@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <a href="https://www.facebook.com/iowfairtrade/"><img src="/img/facebook.png" alt="" class="title_top"></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    {{$title := .Title}}
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            {{ range .Site.Menus.mainmenu}}   
+                <a class="nav-item nav-link" href = "{{.URL}}"{{if eq .Title $title}}id="uline" {{end}}>{{.Title}}</a>
+            {{end}}
+        </div>
+
+    </div>
+</nav>
