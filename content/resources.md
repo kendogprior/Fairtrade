@@ -6,7 +6,6 @@ menu: "mainmenu"
 weight: 3
 layout: "special"
 ---
-<!-- {{< resource_head >}} -->
 ### RESOURCES
 
 {{< tabs >}}
