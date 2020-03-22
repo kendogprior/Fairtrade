@@ -1,7 +1,7 @@
 ---
 title: "News"
 date: 2020-03-17T10:28:08Z
-draft: true
+draft: false
 menu: "mainmenu"
 weight: 5
 ---
