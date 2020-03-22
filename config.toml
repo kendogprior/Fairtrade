@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.iowfairtradeforum.org.uk/"
 languageCode = "en-us"
 Title = "Fairtrade Forum"
 #---------Resource link data--------
@@ -30,8 +30,4 @@ Title = "Fairtrade Forum"
       source = "Anna Fauzy-Ackroyd"
       
 
-# [menu]
-#   [[menu.main]]
-#     title = "Scan"
-#     url = "http://files/Scan.pdf"
-#     weight = 100
+
