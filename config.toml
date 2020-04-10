@@ -1,7 +1,11 @@
 baseURL = "https://www.iowfairtradeforum.org.uk/"
 languageCode = "en-us"
 Title = "Fairtrade Forum"
+
 #---------Resource link data--------
+
+Downloads = "False"
+
 [params]
   [[params.links]]
     name = "The official tradecraft shop"
@@ -24,10 +28,8 @@ Title = "Fairtrade Forum"
 
 #---------Resource download data--------- 
   [[params.downloads]]
-      title = "Teaching Resources"
-      link = "http://www.iowfairtradeforum.org.uk/forum_resources"
-      summary = "Ideas for teaching or your event"
-      source = "Anna Fauzy-Ackroyd"
-      
+    #  title = "Teaching Resources"
+    #  summary = "Ideas for teaching or your event"
+    #  link = "/files/Scan.pdf"   
 
 

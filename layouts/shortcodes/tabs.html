@@ -18,15 +18,20 @@
       </div>
 
         <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <!-- <div> -->
-          {{range .Site.Params.downloads}}
-          <h3>{{.title}}</h3>
-          <div class="lines resbox">
-            <span style = "color:rgb(10, 56, 56); font-size:18px;">Summary</span>: {{.summary}}<br>
-              <span style = "color:rgb(10, 56, 56); font-size:18px;">Source</span>: {{.source}}
-             <p><span style = "color:rgb(10, 56, 56); font-size:18px;">Download</span>: <a href = {{.link}}>{{.title}}</a></p>
-              </div>
-          {{end}}
+          {{ if eq $.Page.Params.downloads false }}
+            <div class="lines resbox">
+              <span style = "color:rgb(10, 56, 56); font-size:18px;">Sorry - no downloads just yet</span>
+            </div>
+          {{else}}
+              {{range .Site.Params.downloads}}
+                <h3>{{.title}}</h3>
+                <div class="lines resbox">
+                  <span style = "color:rgb(10, 56, 56); font-size:18px;">Summary</span>: {{.summary}}<br>
+                  <span style = "color:rgb(10, 56, 56); font-size:18px;">Source</span>: {{.source}}
+                  <p><span style = "color:rgb(10, 56, 56); font-size:18px;">Download</span>: <a href = {{.link}}>{{.title}}</a></p>
+                </div>
+              {{end}}
+            {{ end }}
         </div>
     </div>
 </div>

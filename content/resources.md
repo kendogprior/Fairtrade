@@ -5,6 +5,7 @@ draft: false
 menu: "mainmenu"
 weight: 3
 layout: "special"
+downloads: false
 ---
 ### RESOURCES
 
