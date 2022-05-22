@@ -6,6 +6,9 @@ menu: "mainmenu"
 weight: 4 
 ---
 ## Outlets
-(For small screens please scroll left or right on table)
+
+Please note, we have not had the resources to update the listing to reflect changes during the pandemic
+
+(You may need to scroll the page left or right  to read all the information in a row)
 
 {{< outlets >}}
